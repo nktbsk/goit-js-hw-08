@@ -1,0 +1,28 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  width: 1128px;
+  margin: auto;
+}
+.gallery-image {
+  width: 360px;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.gallery-image:hover {
+  transform: scale(1.05);
+}
+.basicLightbox__placeholder img {
+  background: rgba(46, 47, 66, 0.8);
+  width: 1112px;
+  height: 640px;
+  object-fit: cover;
+}
